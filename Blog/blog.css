@@ -403,16 +403,16 @@
   .watch-carousel { position: relative; }
   .watch-track {
     display: flex;
-    gap: calc(var(--spacing-unit) * 1.2);
+    gap: calc(var(--spacing-unit) * 1.0);
     overflow-x: auto;
-    padding: 0.25rem 0.25rem 1rem;
+    padding: 0.10rem 0.25rem 1rem;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
     scroll-padding-left: 1rem;
   }
-  .watch-track::-webkit-scrollbar { height: 8px; }
+  .watch-track::-webkit-scrollbar { height: 7px; }
   .watch-track::-webkit-scrollbar-thumb { background: rgba(184, 134, 11, 0.35); border-radius: 999px; }
   .watch-track::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.08); }
   .watch-card {
@@ -420,7 +420,7 @@
     scroll-snap-align: start;
     background: var(--background-light);
     border-radius: 18px;
-    padding: 1rem;
+    padding: 1.5rem;
     color: var(--text-light);
   }
   .watch-card:target {
