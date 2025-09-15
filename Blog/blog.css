@@ -1,0 +1,203 @@
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(to right, #d4af37, #ffd700);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: var(--border-gold);
+    cursor: pointer;
+    box-shadow: var(--shadow-card);
+    transition: background-color var(--transition-speed), color var(--transition-speed),
+                transform var(--transition-speed), box-shadow var(--transition-speed), border-color var(--transition-speed);
+  }
+  .cta-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #ffd700, #d4af37);
+    border-color: #FFD700;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+  }
+  .cta-button:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.9), 0 0 0 6px rgba(184, 134, 11, 0.55);
+    transform: translateY(-2px);
+  }
+
+
+
+/* Features (tarjetas) */
+.features-section {
+    background-color: var(--background-medium);
+    text-align: center;
+    padding: calc(var(--spacing-unit) * 5) 0;
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--spacing-unit) * 2);
+    margin-top: calc(var(--spacing-unit) * 2.5);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+  }
+  .feature-card {
+    background-color: var(--background-light);
+    padding: calc(var(--spacing-unit) * 2);
+    border-radius: 18px;
+    border: var(--border-gold);
+  }
+  .feature-card:hover {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+  }
+  .feature-icon {
+    font-size: 3.5em;
+    margin-bottom: var(--spacing-unit);
+    color: var(--primary-color);
+    filter: drop-shadow(0 0 6px rgba(184, 134, 11, 0.35));
+  }
+  .feature-card h3 {
+    font-size: 1.9em;
+    color: var(--text-light);
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+  }
+  .feature-card p { color: #4A4A4A; line-height: 1.6; font-size: 0.95em; }
+  .feature-card:hover h3,
+  .feature-card:hover p,
+  .feature-card:hover a,
+  .feature-card:hover span,
+  .feature-card:hover small,
+  .feature-card:hover strong { color: #FFFFFF; }
+  
+
+  /* CTA section */
+.cta-section {
+    background-color: var(--background-light);
+    padding: calc(var(--spacing-unit) * 6) 0;
+    text-align: center;
+  }
+  .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .cta-content h2 {
+    font-size: 3.5em;
+    color: var(--text-light);
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+    font-weight: 700;
+  }
+  .cta-content p {
+    font-size: 1.4em;
+    color: #1A1A1A;
+    margin-bottom: calc(var(--spacing-unit) * 3);
+    line-height: 1.6;
+    font-weight: 300;
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.005em;
+    font-feature-settings: "kern", "liga", "pnum";
+  }
+
+
+/* Carrusel Destacados */
+.destacados-section {
+    padding: calc(var(--spacing-unit) * 4) 0;
+    background: var(--background-light);
+  }
+  .watch-carousel { position: relative; }
+  .watch-track {
+    display: flex;
+    gap: calc(var(--spacing-unit) * 1.2);
+    overflow-x: auto;
+    padding: 0.25rem 0.25rem 1rem;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scroll-padding-left: 1rem;
+  }
+  .watch-track::-webkit-scrollbar { height: 8px; }
+  .watch-track::-webkit-scrollbar-thumb { background: rgba(184, 134, 11, 0.35); border-radius: 999px; }
+  .watch-track::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.08); }
+  .watch-card {
+    flex: 0 0 clamp(260px, 31vw, 360px);
+    scroll-snap-align: start;
+    background: var(--background-light);
+    border-radius: 18px;
+    padding: 1rem;
+    color: var(--text-light);
+  }
+  .watch-card:target {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.25);
+  }
+  .watch-media {
+    width: 100%;
+    aspect-ratio: 4/5;
+    border-radius: 14px;
+    overflow: hidden;
+    background: radial-gradient(120% 120% at 50% 20%, #fff 0%, #f7f7f7 60%, #efefef 100%);
+    border: 1px solid rgba(184, 134, 11, 0.25);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(10px, 2vw, 18px);
+  }
+  .watch-media img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+  .watch-card:hover .watch-media img { transform: scale(1.03); }
+  .watch-name {
+    font-family: var(--font-family-heading);
+    font-size: 1.12rem;
+    margin: 0.3rem 0 0.35rem;
+    letter-spacing: 0.012em;
+    color: var(--text-light);
+  }
+  .watch-price { color: var(--primary-color); font-weight: 700; margin: 0 0 0.35rem; }
+  .watch-rating { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.6rem; font-size: 0.95rem; }
+  .star { color: rgba(184, 134, 11, 0.35); }
+  .star.filled { color: var(--primary-color); }
+  .star.half { color: #E7C257; }
+  .rating-value { color: var(--subtitle-color); font-size: 0.9rem; }
+  .watch-link {
+    display: inline-block;
+    margin-bottom: 0.45rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .watch-link:hover { color: var(--text-dark); text-decoration: underline; }
+  .watch-card .btn-details { margin-top: 0.25rem; border: 1.4px solid rgba(184, 134, 11, 0.65); }
+  .watch-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 0.5rem; }
+  .watch-dots .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: rgba(184, 134, 11, 0.35);
+    border: 1px solid rgba(184, 134, 11, 0.55);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  }
+  .watch-dots .dot:hover {
+    transform: scale(1.1);
+    background: #FFD700;
+    border-color: #FFD700;
+  }
+  .watch-card { scroll-margin-left: 1rem; }
