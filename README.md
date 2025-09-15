@@ -3,7 +3,7 @@
  
  Bienvenido al sitio web corporativo de LuxTime, una experiencia digital diseñada para capturar la esencia del lujo, la precisión y la elegancia atemporal. Este proyecto es una maqueta estática creada con HTML y CSS nativos, sin librerías externas, que refleja la identidad de LuxTime: una marca dedicada a ofrecer relojes de lujo auténticos y certificados, tejidos con historias de artesanía y pasión. Explora nuestro legado, descubre colecciones exclusivas y sumérgete en un viaje donde el tiempo se convierte en arte.
 
-# Visita el sitio en vivo: https://delicate-lollipop-9de829.netlify.app/
+# Visita el sitio actualizado con Blog en vivo: https://radiant-rabanadas-915382.netlify.app/
 
 # ✨ Sobre el Proyecto
 LuxTime nos encomendó crear un sitio web que no solo muestre sus relojes icónicos, sino que cuente su historia de más de un siglo de excelencia relojera. Desde un banner que deslumbra con imágenes rotativas hasta una línea cronológica que narra su evolución, cada página está diseñada para evocar sofisticación y confianza. El sitio es completamente responsivo, adaptándose con elegancia a cualquier dispositivo, y utiliza animaciones CSS para simular interacciones dinámicas, como carruseles y formularios, sin necesidad de backend.
@@ -25,12 +25,18 @@ Flexbox: Todos los layouts, desde el header hasta el footer, usan Flexbox para u
 Accesibilidad: Textos con alto contraste, atributos aria-label para navegación, y soporte para usuarios con preferencias de movimiento reducido.
 
 
+# Blog: 
+
+El blog en una serie de detalles actualizados en donde mes a mes se estaran actualizandos, para mejoras futuras se hará dinamicamente, en donde sin necesidad de codigo se podra actualizar este tipo de informacion, es un carrusel informativo donde estaran todo tipo de consejos y tips, incluyendo la autoras.
+
+
+
 # README.md: Esta documentación.
 # LICENSE: Licencia MIT.
 
 # 🚀 Cómo Explorar el Sitio
 Clonar el Repositorio:
-git clone: https://github.com/juliansantamaria0/ProyectodeHTML_CSS.git
+git clone: https://github.com/magarcia08/Examen_Html_GarciaMaria.git
 
 
 
